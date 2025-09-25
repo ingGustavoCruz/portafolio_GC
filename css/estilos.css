@@ -1,0 +1,345 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px; 
+}
+body {
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      font-family: Arial, sans-serif;
+    }
+    .menu{
+      background: #ffffff !important;
+      position: fixed;    
+      top: 0;          
+      left: 0;              
+      z-index: 1000;    
+      padding-top: 8px;
+      padding-bottom: 8px;
+      height: auto;    
+    }
+      .hero {
+      /* background: url('../images/titulo_portafolio.png') center center/100% auto no-repeat; */
+      color: #f5f7fa;
+      width: 100%;
+      height: auto;
+      
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; /* botones abajo */
+      align-items: flex-end;     /* botones a la derecha */
+      min-height: 220px;         /* altura mínima para que funcione el posicionamiento */
+    }
+    .hero .text-center {
+      width: auto;
+      text-align: right;
+      margin-bottom: 0;
+    }
+    .menu a {
+      background: #f5f7fa !important;
+      /* color: #00415d !important; */
+      color: #00415d !important;
+      border: none !important;
+      transition: background 0.3s;
+    }
+    .menu a:hover {
+      background: #d6d8db !important;
+      color: #017db0 !important;
+    }
+    .form-section .btn-primary {
+      background-color: #00415d;
+      border-color: #00415d;
+      color: #fff;
+      transition: background 0.3s, border 0.3s;
+    }
+    .form-section .btn-primary:hover,
+    .form-section .btn-primary:focus {
+      background-color: #02506e;
+      border-color: #017db0;
+      color: #fff;
+    }
+    .mas-abajo {
+      margin-top: 50px;
+    }
+    /*Estilos bloque bienvenidos*/
+    .bienvenidos {
+      /* background: #f5f7fa !important; */
+      background-size: cover;
+      /* height: 70vh;
+      overflow: hidden;  */
+      margin-top: 80px; /* Puedes ajustar el valor según el espacio que desees */
+    }
+
+    /* 
+    .navbar-fixed-top {
+      background: rgba(0, 0, 0, 0.75); } */
+
+    .navbar-light .navbar-brand {
+      color: #fdfdfd;
+      font-size: 1.3rem;
+      text-transform: uppercase; }
+
+    .navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+      color: rgba(255, 255, 255, 0.98); }
+
+    .navbar-toggler {
+      font-size: 1.6rem;
+      color: #fff !important; }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: white;
+      text-align: center;
+      padding: .4rem;
+      text-transform: uppercase; }
+
+    .navbar-light .navbar-nav .open > .nav-link, .navbar-light .navbar-nav .open > .nav-link:focus, .navbar-light .navbar-nav .open > .nav-link:hover, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .active > .nav-link:focus, .navbar-light .navbar-nav .active > .nav-link:hover, .navbar-light .navbar-nav .nav-link.open, .navbar-light .navbar-nav .nav-link.open:focus, .navbar-light .navbar-nav .nav-link.open:hover, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.active:focus, .navbar-light .navbar-nav .nav-link.active:hover {
+      color: rgba(255, 255, 255, 0.95);
+      background: #7cc2e6; }
+
+    .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+      color: white;
+      background: #7cc2e6; }
+
+    #menuprincipal {
+      clear: both; }
+
+    .texto-bienvenido {
+      color: black;
+      #home {
+      margin-top: 200px; /* Puedes ajustar el valor según el espacio que desees */
+    }}
+
+    .btn-primary {
+      background-color: #7cc2e6;
+      border-color: #00a2e2;
+      -webkit-transition: all .5s ease;
+              transition: all .5s ease;
+      text-transform: uppercase; }
+
+    .btn-primary:hover {
+      color: #fff;
+      background-color: #04024f;
+      border-color: #04024f; }
+
+    /*Estilos bloque Quienes somos*/
+    .quienes-somos {
+      background: #7cc2e6;
+      color: #fff; }
+    /*Estilos bloque Servicios*/
+    .servicios .fa {
+      color: #7cc2e6;
+      font-size: 6rem; }
+    .servicios h3 {
+      font-weight: bold; }
+    /*Estilos Ultimos proyectos*/
+    .ultimos-proyectos {
+      background: #7cc2e6;
+      color: #fff; 
+    margin-top: 80px;}
+    .ultimos-proyectos a {
+      display: block;
+      overflow: hidden;
+      margin-bottom: 1.5rem; }
+    .ultimos-proyectos img {
+      -webkit-transition: all .3s ease;
+              transition: all .3s ease;
+      min-width: 100%; }
+    .ultimos-proyectos a:hover img {
+      -webkit-transform: scale(1.25);
+          -ms-transform: scale(1.25);
+          transform: scale(1.25); 
+        }
+
+    /***Estilos bloque Contactame*/
+    .form-section {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(30, 60, 114, 0.10);
+      padding: 32px 24px;
+      margin: 0 auto;
+      max-width: 420px;
+    }
+    .text-justify {
+        text-align: justify;
+    }
+    .text-azul {
+      background: #00415d;
+      color: #fff;
+      padding: 1rem;
+      border-radius: 4px;
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 100%;
+    }
+
+  .form-section {
+
+      background: rgb(9, 119, 156);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    }
+
+  .btn-primary {
+      background: #2a5298;
+      border: none;
+  }
+
+.form-section .input-group-text {
+  background: #f8f9fa;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.form-section .form-control {
+  border-radius: 0 8px 8px 0;
+  font-size: 1.1rem;
+  padding: 10px 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.form-section .input-group {
+  margin-bottom: 18px;
+}
+.mt-150 {
+  margin-top: 150px !important;
+}
+/**Estilos bloque Pie de pagina*/
+.footer {
+  color: #fff;
+  background: #00415d; }
+#contactame {
+  margin-top: 200px;
+}
+#gracias {
+  margin-top: 92px;
+  margin-bottom: 64px;
+}
+    .contenedor {
+      display: flex; /* Habilita el modelo Flexbox */
+      justify-content: space-between; /* Separa los elementos hijos */
+      width: 100%; /* Asegúrate de que el contenedor tenga suficiente espacio */
+      /*border: 1px solid black; /* Solo para visualización */
+      /*padding: 10px; /* Solo para visualización */
+    }
+
+    .hijo1, .hijo2 {
+      /* background-color: lightblue; */
+      /* padding: 10px; */
+      /* border: 1px solid blue; */
+    }
+.logos {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  background: #f5f7fa;
+  white-space: nowrap;
+  position: relative;
+  margin-top: calc(13vh - 100px);
+  height: 140px;               /* espacio para imágenes + margen */
+  display: flex;               /* usamos flexbox */
+  align-items: center;         /* centra verticalmente */
+}
+
+
+    .logos-slide {
+  display: inline-block;
+  animation: slide 60s linear infinite;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 70px;
+  transition: transform 0.3s ease; /* animación suave */
+  display: inline-block;
+}
+
+.logos-slide img:hover {
+  transform: scale(1.3); /* aumenta el tamaño */
+  z-index: 2;            /* para que no quede tapado por otras imágenes */
+}
+
+    .logos::before{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100%;
+      background: linear-gradient(to left, rgba(255,255,255,0), #f5f7fa);
+      content: " ";
+      z-index: 1;
+    }
+    .logos::after{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100%;
+      background: linear-gradient(to right, rgba(255,255,255,0), #f5f7fa);
+      content: " ";
+      z-index: 1;
+    }
+    /**animación del carrusel*/
+    @keyframes slide {
+      from {
+        transform: translateX(0); }
+      to {
+        transform: translateX(-100%); } 
+      }
+
+
+    
+/*EMPIEZAN LOS MEDIAS QUERIES*/
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+.carrusel-contenedor {
+    width: 100%;
+    overflow: hidden; /* Oculta las partes de las imágenes que no caben */
+}
+.carrusel-items {
+    display: flex;
+    flex-wrap: nowrap; /* Asegura que las imágenes estén en una sola fila */
+    scroll-snap-type: x mandatory; /* Habilita el "snap" horizontal */
+    overflow-x: auto; /* Permite el scroll horizontal */
+}
+.carrusel-items img {
+    flex: 0 0 100%; /* Hace que cada imagen ocupe el ancho del contenedor */
+    scroll-snap-align: start; /* Alinea el inicio de cada ítem */
+    width: 100%; /* Asegura que la imagen tenga el ancho del contenedor */
+    object-fit: cover; /* Para que la imagen cubra el área sin deformarse */
+  max-width: 150px; /* Ajusta este valor según el tamaño deseado */
+  max-height: 180px; /* Ajusta este valor para controlar la altura */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina espacio extra debajo de las imágenes */
+  margin: auto; /* Centra las imágenes si el contenedor es más grande */
+}
+  #menuprincipal {
+    clear: inherit; }
+
+  /* .bienvenidos {
+    background: url("../images/fondo-bienvenido-grande.jpg");
+    background-size: cover; } } */
+
+/*# sourceMappingURL=estilos.css.map */
+  }
+
+  .miDiv {
+  background: linear-gradient(270deg, #87CEEB, #0033cc, #1E90FF);
+  background-size: 600% 600%;
+  animation: moverFondo 10s ease infinite;
+  padding: 2rem;
+  border-radius: 12px;
+  color: white;
+}
+
+@keyframes moverFondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
