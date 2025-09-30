@@ -419,7 +419,6 @@ body {
 }
 /*----------------------------------------------------------------*/
 
-
 .exp-container {
   margin: 40px auto;
   max-width: 600px;
@@ -544,4 +543,3 @@ body {
 .exp-container .tab:nth-child(5) label h2 {
   background: linear-gradient(90deg, rgb(163, 145, 97) 0%, rgb(197, 145, 30) 50%, rgb(237, 221, 83) 100%);
 }
-
