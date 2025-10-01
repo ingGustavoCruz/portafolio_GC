@@ -11,11 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Carga de fuentes de Font  Awesome -->
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Carga de estilos css personalizados -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" href="images/monito01.png" type="image/x-icon">
+
+    <meta name="description" content="Portafolio de Ing. Gustavo Cruz, Desarrollador Web Full-Stack con experiencia en desarrollo de sistemas, landing pages y aplicaciones web.">
+
   </head>
   <body>
 
@@ -52,7 +55,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="#contactame" class="nav-link fw-bold text-primary">
+            <a href="#contactame1" class="nav-link fw-bold text-primary">
               <i class="fa-regular fa-envelope"></i> Contáctame
             </a>
           </li>
@@ -62,15 +65,14 @@
   </nav>
 </header>
 
-
-  <a href="#" id="home" class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#quienes-somos"></a>
+  <a href="#" id="home" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#quienes-somos"></a>
 
   <section class="bienvenidos">
     <div class="texto-bienvenido text-xs-center">
       <div class="container text-justify">
         <div class="row align-items-center">
           <!-- Columna 1: Foto -->
-          <div class=" col-12 col-md-6 text-center mb-md-0 mt-5">
+          <div class="col-12 col-md-6 text-center mb-md-0 mt-5">
             <img src="images/ponente.jpg" alt="Ing. Gustavo Cruz" 
                 class="img-fluid shadow-sm" 
                 style="max-width: 100%; border-radius: 12px;">
@@ -137,7 +139,7 @@
         </div>
       </div>
     </div>    
-
+  </section>
   <section class="exp-container">
     <div class="text-xs-center mt-5">
       <h1 class="soft-title mb-4">EXPERIENCIA PROFESIONAL:</h1>
@@ -233,23 +235,23 @@
       </div>
       
       <!-- Segunda imagen -->
-      <div class="col-12">
+      <div class="col-12 mb-5">
         <img src="images/ccpmFormacion.png" alt="formación académica CCPM"
           class="img-acad-secundaria mx-auto d-block">
+      <a href="#" id="proyectos" class="mas-abajo" data-bs-toggle="modal" data-bs-target="#quienes-somos"></a>
       </div>
-      
     </div>  
   </div>
+  
 </section>
 
-  </section> 
-
-  <a href="#" id="proyectos" class="mas-abajo y-3 mb-4" data-toggle="modal" data-target="#quienes-somos"></a>
+  
+  <!-- <a href="#" id="proyectos" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#quienes-somos"></a> -->
 
   <!-- Sección proyectos -->
-  <section class="ultimos-proyectos py-2 text-xs-center">
+  <section class="ultimos-proyectos py-2 text-xs-center mb-md-0">
     <div class="container">
-      <h2 class="h3 mb-3"><Strong>ÚLTIMOS PROYECTOS</Strong></h2>
+      <h2 class="h3 mb-3"><strong>ÚLTIMOS PROYECTOS</strong></h2>
       <div class="row">
 
         <div class="col-md-3">
@@ -295,7 +297,7 @@
   <!-- Sección proyectos 02 -->
   <section class="ultimos-proyectos py-2 text-xs-center">
     <div class="container">
-      <h2 class="h3 mb-3"><Strong>WordPress</Strong></h2>
+      <h2 class="h3 mb-3"><strong>WordPress</strong></h2>
       <div class="row">
 
         <div class="col-md-3">
@@ -312,9 +314,9 @@
     </div>  
   </section>  
 
-  <a href="#" id="contactame" class="mas-abajo y-3 mb-4" data-toggle="modal" data-target="#quienes-somos"></a>
+  <a href="#" id="contactame1" class="mas-abajo" data-bs-toggle="modal" data-bs-target="#quienes-somos"></a>
 
-  <section id="gracias" class="contactame mt-10">  
+  <section id="contactame" class="contactame mt-6">  
     <div class="text-xs-center">
       <div class="container my-5">
         <!-- hacemos la fila flex y alineada al centro vertical -->
@@ -322,14 +324,14 @@
           
           <!-- Columna imagen -->
           <div class="col-12 col-md-6 d-flex justify-content-center">
-            <img src="images/tavo006.png" alt="gracias" 
+            <img src="images/tavo006.png" alt="contactame" 
               class="" style="max-width: 100%; border-radius: 12px;">
           </div>
           
           <!-- Columna formulario -->
           <div class="col-12 col-md-6 d-flex align-items-center">
             <div class="form-section w-100">
-              <h2 class="text-center mb-4" style="color: aliceblue;"><strong>Contáctame</strong></h>
+              <h2 class="text-center mb-4" style="color: aliceblue;"><strong>Contáctame</strong></h2>
               <h5 style="color: aliceblue;">ing.erickgustavocruz@gmail.com</h5>
               <form id="registroForm">
                 <!-- Nombre -->
@@ -351,7 +353,7 @@
                   <span class="input-group-text">
                     <i class="m-1 fa-solid fa-comment" style="color:#00415d; font-size: 24px;"></i>
                   </span>
-                  <input type="tel" class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" required>
+                  <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Mensaje" required></textarea>
                 </div>
                 <!-- Botón -->
                 <button type="submit" class="btn btn-primary w-100" name="enviar">Enviar</button>
@@ -392,40 +394,21 @@
     </div>
   </footer>
 
-<!-- Modal -->
-<div class="modal fade" id="quienes-somos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h4 class="modal-title" id="myModalLabel">Quienes somos</h4>
-      </div>
-      <div class="modal-body">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia saepe autem unde culpa temporibus qui labore eos. Ullam repellendus saepe laborum qui culpa, doloribus atque tempore aut eaque blanditiis, iste.
-        </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
 
 <script>
-  document.querySelectorAll('a[href^="#contactame1"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const destino = document.querySelector(this.getAttribute('href'));
+    if (destino) {
       e.preventDefault();
-      document.querySelector('#contactame1').scrollIntoView({ behavior: 'smooth' });
-    });
+      destino.scrollIntoView({ behavior: 'smooth' });
+    }
   });
+});
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
